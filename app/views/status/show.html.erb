@@ -1,0 +1,32 @@
+<h1>Status#show</h1>
+<p>Find me in app/views/status/show.html.erb</p>
+
+
+<%= @car1.display_car %>
+</br>
+<%= @car1.check_lights %>
+</br>
+<%= @car1.speed %>
+</br>
+<%= @car1.show_park %>
+</br>
+<%= @car1.description %>
+
+
+<form action= "/status/light_button/" method= "get">
+  <input type= "submit" value= "Light Switch">
+</form>
+</br>
+<form action= "/status/accelerate/" method= "get">
+  <input type= "submit" value= "Accelerate">
+</form>
+</br>
+<form action= "/status/brake/" method= "get">
+  <input type= "submit" value= "Brake">
+</form>
+</br>
+<form action= "/status/parking_brake/" method= "get">
+  <input type="radio" name="parking_brake" value=true>Parking Brake: On<br>
+  <input type="radio" name="parking_brake" value=false>Parking Brake: Off<br>
+  <input type="submit">
+</form>
